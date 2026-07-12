@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Shela Aga Pedrananda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .modal-bg {
+        background-color: rgba(0, 0, 0, 0.85);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-40">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="font-bold text-xl text-blue-700">Shela Aga P.</a>
+        <div class="space-x-6 hidden md:block font-medium">
+          <a href="#keahlian" class="hover:text-blue-600 transition"
+            >Keahlian</a
+          >
+          <a href="#proyek" class="hover:text-blue-600 transition"
+            >Proyek Otomasi</a
+          >
+          <a href="#pengalaman" class="hover:text-blue-600 transition"
+            >Riwayat Kerja</a
+          >
+          <a href="#organisasi" class="hover:text-blue-600 transition"
+            >Kepemimpinan</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="pt-32 pb-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">
+          Shela Aga Pedrananda <br />
+          <span class="text-blue-600 text-3xl md:text-5xl"
+            >Electrical Automation Engineer</span
+          >
+        </h1>
+        <p
+          class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed"
+        >
+          Automation Engineer dengan rekam jejak sukses mengeksekusi lebih dari
+          10 proyek otomasi industri di sektor FMCG, manufaktur, dan R&D.
+          Terbukti memberikan dampak terukur melalui efisiensi operasional 15%,
+          penurunan <i>downtime</i> 25%, dan penghematan energi 9%.
+        </p>
+        <div class="flex justify-center space-x-4">
+          <a
+            href="mailto:shelaagaps@gmail.com"
+            class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg"
+            >Hubungi via Email</a
+          >
+          <a
+            href="https://linkedin.com/in/sheganda"
+            target="_blank"
+            class="bg-white text-slate-700 border border-slate-300 px-6 py-3 rounded-lg font-semibold hover:bg-slate-50 transition shadow-sm"
+            >Kunjungi LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="keahlian" class="py-16 bg-white px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Keahlian Teknik & Utama
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 border border-slate-100 rounded-xl shadow-sm">
+            <h3 class="text-xl font-bold text-blue-700 mb-4">Hardware & PLC</h3>
+            <ul class="space-y-2 text-slate-600 list-disc list-inside text-sm">
+              <li><b>Siemens:</b> S7-300, S7-1200, S7-1500 (TIA Portal)</li>
+              <li><b>Schneider:</b> M221, M241</li>
+              <li><b>Mitsubishi:</b> FX & Q Series</li>
+              <li><b>Omron</b> + Temperature Control Integration</li>
+              <li>Electrical Panel & Control Wiring</li>
+            </ul>
+          </div>
+          <div class="p-6 border border-slate-100 rounded-xl shadow-sm">
+            <h3 class="text-xl font-bold text-blue-700 mb-4">
+              Software & Control
+            </h3>
+            <ul class="space-y-2 text-slate-600 list-disc list-inside text-sm">
+              <li>HMI & SCADA Development</li>
+              <li>AutoCAD Electrical (Wiring Diagram)</li>
+              <li>PID Control Optimization</li>
+              <li>Advanced PLC Diagnostics</li>
+              <li>SOP & Technical Documentation</li>
+            </ul>
+          </div>
+          <div class="p-6 border border-slate-100 rounded-xl shadow-sm">
+            <h3 class="text-xl font-bold text-blue-700 mb-4">
+              Industrial & Networking
+            </h3>
+            <ul class="space-y-2 text-slate-600 list-disc list-inside text-sm">
+              <li>PROFINET, Modbus RTU / TCP</li>
+              <li>VFD & Motor Control Setup</li>
+              <li>Preventive & Corrective Maintenance</li>
+              <li>Machine Installation & Modification</li>
+              <li>Root Cause Analysis (RCA)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="py-20 px-4 bg-slate-50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          Portofolio Proyek Terpilih
+        </h2>
+        <p class="text-center text-slate-500 mb-12">
+          Menampilkan keberhasilan implementasi teknis dan dampak bisnis yang
+          nyata.
+        </p>
+
+        <div class="grid grid-cols-1 gap-10">
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden md:flex"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/ssr-modification.jpg',
+                  'Modifikasi SSR Heatsink',
+                )
+              "
+            >
+              <span class="text-slate-400 font-medium text-xs p-4 text-center"
+                >Coming Soon</span
+              >
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Modifikasi Sistem Elektrikal Mesin & Eliminasi Breakdown SSR
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Electrical Engineer - R&D | Filtrona
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Terjadi kerusakan hubungan singkat
+                  (short-circuit) berulang pada komponen Solid State Relay (SSR)
+                  di 9 mesin manufaktur filter yang memicu tingginya nilai waktu
+                  henti operasional.
+                </p>
+                <p>
+                  <b>Action:</b> Melakukan penelusuran eror kelistrikan
+                  menggunakan skema pengabelan (wiring diagram) dan diagnostik
+                  PLC. Mengidentifikasi masalah pelepas panas (heatsink),
+                  kemudian merancang dan mengeksekusi modifikasi pemasangan
+                  heatsink baru.
+                </p>
+                <p>
+                  <b>Result:</b> Berhasil mencetak status nol kerusakan terkait
+                  SSR selama lebih dari 5 bulan berturut-turut serta memangkas
+                  nilai downtime mesin hingga 25% .
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-10 md:flex flex-row-reverse"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/palletizer-robot.jpg',
+                  'Palletizer Robot Overhaul',
+                )
+              "
+            >
+              <span class="text-slate-400 font-medium text-xs p-4 text-center"
+                >Coming Soon</span
+              >
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Troubleshooting & Restorasi Logika Pasca-Overhaul Palletizer
+                Robot
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Industrial Automation Project
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Sistem kontrol pada mesin Palletizer Robot
+                  mengalami disfungsi logika pasca-aktivitas overhaul kritis
+                  yang melibatkan pihak vendor dari china.
+                </p>
+                <p>
+                  <b>Action:</b> Memimpin investigasi gangguan (troubleshooting)
+                  secara mendalam melalui teknik advanced PLC diagnostics serta
+                  menjembatani komunikasi teknis lintas fungsi dengan pihak
+                  vendor luar negeri.
+                </p>
+                <p>
+                  <b>Result:</b> Sukses memulihkan logika kontrol dan fungsi
+                  komunikasi mesin secara total, sekaligus meningkatkan
+                  efisiensi operasional lini tersebut sebesar 15% .
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden md:flex"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/Pengembangan EWS.jpg',
+                  'Pengembangan Early Warning System Gas Detector',
+                )
+              "
+            >
+              <img
+                src="images/Pengembangan EWS.jpg"
+                ,
+                alt="Pertamina Project"
+                class="w-full h-full object-cover hover:scale-105 transition duration-300"
+              />
+              >
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Pengembangan Gas Detector Early Warning System (EWS)
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Industrial Control System Project
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Kebutuhan penguatan aspek HSSE pada
+                  fasilitas Pertamnia Patra Niaga untuk mendeteksi potensi
+                  kebocoran gas berbahaya secara dini dan real-time.
+                </p>
+                <p>
+                  <b>Action:</b> Merancang arsitektur perangkat keras sistem
+                  interlock gas detector, melakukan <i>wiring</i> panel kontrol,
+                  memprogram logika PLC, serta mengintegrasikan sinyal alarm ke
+                  sistem monitoring terpusat.
+                </p>
+                <p>
+                  <b>Result:</b> Menghasilkan sistem peringatan dini otomatis
+                  yang andal, meminimalisir risiko kecelakaan kerja, dan
+                  memastikan kepatuhan penuh terhadap regulasi keselamatan kerja
+                  industri.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-10 md:flex flex-row-reverse"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/Pertamina Commissioning.jpg',
+                  'Pertamina Commissioning & Handover',
+                )
+              "
+            >
+              <img
+                src="images/Pertamina Commissioning.jpg"
+                alt="Pertamina Project"
+                class="w-full h-full object-cover hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Aktivitas Komisioning & Handover Sistem Fasilitas Industri
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Project Engineer | Fasilitas Pertamina Patra Niaga
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Memastikan seluruh instalasi sistem kontrol
+                  baru di area operasional Pertamina Patra Niaga berfungsi
+                  sesuai standar spesifikasi sebelum diserahterimakan kepada
+                  klien.
+                </p>
+                <p>
+                  <b>Action:</b> Mengawal proses dari tahap tinjauan desain
+                  awal, inspeksi pengabelan, uji fungsi sinyal input/output (I/O
+                  testing), hingga pengujian performa akhir bersama tim teknis
+                  klien.
+                </p>
+                <p>
+                  <b>Result:</b> Proyek berhasil diselesaikan dengan catatan
+                  zero accident dan diserahterimakan
+                  <i>(client handover)</i> secara mulus dengan pemenuhan standar
+                  kualitas yang ketat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+           <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden md:flex"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/ERTG PELINDO.jpg',
+                  'Implementasi Komunikasi Modbus RTU/TCP pada Sistem Monitoring E-RTG',
+                )
+              "
+            >
+              <img
+                src="images/ERTG PELINDO.jpg"
+                ,
+                alt="PELINDO E-RTG Project"
+                class="w-full h-full object-cover hover:scale-105 transition duration-300"
+              />
+              >
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Implementasi Komunikasi Modbus RTU/TCP pada Sistem Monitoring E-RTG
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Project Engineer | PT Terminal Peti Kemas Surabaya (PELINDO)
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Sistem monitoring energi E-RTG memerlukan integrasi data dari power meter agar parameter kelistrikan dapat dipantau secara terpusat.
+                </p>
+                <p>
+                  <b>Action:</b> Melakukan konfigurasi komunikasi Modbus RTU/TCP antara PLC dan power meter, melakukan pengujian komunikasi, pemetaan register <i>(register mapping)</i>, serta verifikasi akurasi data sebelum diintegrasikan ke sistem monitoring.
+                </p>
+                <p>
+                  <b>Result:</b> Sistem monitoring berhasil menerima data kelistrikan secara real-time sehingga meningkatkan visibilitas kondisi operasional dan mendukung proses analisis konsumsi energi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-10 md:flex flex-row-reverse"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/PAGE1.jpg',
+                  'OVERVIEW Sistem Monitoring SCADA CIMON pada Fasilitas SWRO',
+                )
+              "
+            >
+              <img
+                src="images/PAGE1.jpg"
+                alt="Pertamina Project"
+                class="w-full h-full object-cover hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Pengembangan Sistem Monitoring SCADA CIMON pada Fasilitas SWRO
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Project Engineer | PT Pertamina Trans Kontinental
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Proyek pembangunan fasilitas Sea Water Reverse Osmosis (SWRO) membutuhkan sistem SCADA untuk mengintegrasikan seluruh proses pengolahan air.
+                </p>
+                <p>
+                  <b>Action:</b> Bertanggung jawab dalam perancangan arsitektur SCADA CIMON, pengembangan tampilan HMI, konfigurasi komunikasi PLC, integrasi alarm dan historical data, serta melakukan pengujian dan commissioning sistem.
+                </p>
+                <p>
+                  <b>Result:</b> Sistem SCADA berhasil diimplementasikan dan beroperasi sesuai kebutuhan operasional, memungkinkan pemantauan proses secara real-time serta meningkatkan efisiensi pengawasan fasilitas.
+                  <i>(client handover)</i> secara mulus dengan pemenuhan standar
+                  kualitas yang ketat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden md:flex"
+          >
+
+          <div
+            class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden md:flex"
+          >
+            <div
+              class="md:w-1/3 bg-slate-200 flex items-center justify-center cursor-pointer min-h-[200px]"
+              onclick="
+                openModal(
+                  'images/PASIS conveyor pneumatic.jpg',
+                  'Riset PID Conveyor Pneumatik',
+                )
+              "
+            >
+              <img
+                src="images/Penggunaan energi.jpg"
+                alt="Bogasari Project"
+                class="w-full h-full object-cover hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div class="p-8 md:w-2/3">
+              <h3 class="text-xl font-bold text-slate-900 mb-1">
+                Optimasi Kontrol Tekanan pada Konveyor Pneumatik Menggunakan
+                Metode PID
+              </h3>
+              <p class="text-blue-600 font-medium text-sm mb-4">
+                Riset Tugas Akhir | Institut Teknologi Sepuluh Nopember
+              </p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p>
+                  <b>Situation:</b> Proses transportasi gandum pada industri
+                  pengolahan tepung (Mill E) membutuhkan stabilitas tekanan
+                  udara yang tinggi untuk mencegah penyumbatan pipa dan boros
+                  energi.
+                </p>
+                <p>
+                  <b>Action:</b> Merancang pemodelan kendali otomatis,
+                  memprogram algoritma kontrol PID ke dalam PLC untuk mengatur
+                  tekanan secara presisi, serta melakukan analisis kestabilan
+                  respon transien.
+                </p>
+                <p>
+                  <b>Result:</b> Berhasil mengoptimalkan stabilitas sistem,
+                  menghasilkan potensi penghematan konsumsi energi hingga 9% ,
+                  serta sukses memublikasikan karya riset ini di lingkungan
+                  akademik ITS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pengalaman" class="py-20 bg-white px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Pengalaman Profesional & Pendidikan
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-bold mb-6 text-slate-900 border-b pb-2">
+              Pengalaman Kerja
+            </h3>
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-blue-700">
+                Electrical Engineer - R&D
+              </h4>
+              <p class="text-slate-500 font-medium text-xs">
+                Filtrona, Sidoarjo | Jan 2026 - Sekarang
+              </p>
+              <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+                Fokus pada manajemen perawatan preventif ( preventive
+                maintenance ), inspeksi dan penggantian suku cadang elektrikal,
+                modifikasi sistem kontrol mesin manufaktur filter, serta
+                optimalisasi durasi pemecahan masalah gangguan kelistrikan
+                pabrik.
+              </p>
+            </div>
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-blue-700">TPM - Engineer</h4>
+              <p class="text-slate-500 font-medium text-xs">
+                PT Sari Enesis Indah, Bogor | Nov 2025 - Jan 2026
+              </p>
+              <p class="mt-2 text-slate-600 text-sm leading-relaxed">
+                Melakukan pemrograman ulang logika kontrol PLC ( reprogramming
+                ), modifikasi antarmuka HMI untuk kemudahan operasional
+                operator, serta penerapan pilar Total Productive Maintenance
+                (TPM) demi meningkatkan efisiensi dan keandalan mesin produksi
+                FMCG.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-6 text-slate-900 border-b pb-2">
+              Pendidikan & Validasi Kompetensi
+            </h3>
+            <div class="mb-6">
+              <h4 class="text-lg font-bold text-blue-700">
+                B.A.Sc. dalam Teknik Elektro Otomasi
+              </h4>
+              <p class="text-slate-500 font-medium text-xs">
+                Institut Teknologi Sepuluh Nopember (ITS), Surabaya | Lulus Aug
+                2025
+              </p>
+              <p class="mt-1 text-slate-600 text-sm"><b>IPK:</b> 3.49 / 4.00</p>
+            </div>
+
+            <h4 class="font-bold text-slate-900 mb-3 text-sm">
+              Sertifikasi & Lisensi Industri:
+            </h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 text-sm">✓</span>
+                <div>
+                  <p class="font-bold text-sm text-slate-800">
+                    Sertifikasi PLC Programming – BNSP
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    Validasi keahlian pemrograman standar nasional untuk sistem
+                    kendali logika industri.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 text-sm">✓</span>
+                <div>
+                  <p class="font-bold text-sm text-slate-800">
+                    LOTO (Lockout-Tagout) Safety Training
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    Kualifikasi prosedur isolasi energi berbahaya demi
+                    keselamatan penuh saat perawatan mesin.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 text-sm">✓</span>
+                <div>
+                  <p class="font-bold text-sm text-slate-800">
+                    HSSE Passport Qualification
+                  </p>
+                  <p class="text-xs text-slate-500">
+                    Standar kompetensi aspek keselamatan, kesehatan kerja,
+                    lingkungan, dan keamanan di industri berisiko tinggi.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="organisasi"
+      class="py-16 bg-slate-50 px-4 border-t border-slate-100"
+    >
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Kepemimpinan & Aktivitas
+        </h2>
+        <div class="space-y-6">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4"
+          >
+            <div
+              class="bg-blue-50 p-3 rounded-lg text-blue-600 font-bold text-lg"
+            >
+              WRO
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900">
+                Technical Judge – World Robot Olympiad (WRO)
+              </h4>
+              <p class="text-slate-500 text-xs font-medium">
+                Skala Internasional | Apr 2023 - Aug 2023
+              </p>
+              <p class="mt-2 text-sm text-slate-600">
+                Melakukan evaluasi performa teknis, pengujian logika sistem
+                mekanik serta penilaian kepatuhan kriteria skor terhadap lebih
+                dari 50 peserta divisi senior pada kompetisi robotika
+                internasional.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4"
+          >
+            <div
+              class="bg-blue-50 p-3 rounded-lg text-blue-600 font-bold text-lg"
+            >
+              ITS
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900">
+                Staff of Student Welfare Division – Himpunan Mahasiswa DTEO ITS
+              </h4>
+              <p class="text-slate-500 text-xs font-medium">
+                Organisasi Kampus | Jan 2024 - Dec 2024
+              </p>
+              <p class="mt-2 text-sm text-slate-600">
+                Mengoordinasikan program beasiswa kesejahteraan serta
+                pengembangan kapasitas akademik yang berdampak positif bagi
+                lebih dari 100 mahasiswa Teknik Otomasi Kelistrikan.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-4"
+          >
+            <div
+              class="bg-blue-50 p-3 rounded-lg text-blue-600 font-bold text-lg"
+            >
+              RRO
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900">
+                Head of LEGO Competition Division – Robokidz Robot Olympiad
+                (RRO)
+              </h4>
+              <p class="text-slate-500 text-xs font-medium">
+                Kompetisi Regional | Aug 2022 - Feb 2023
+              </p>
+              <p class="mt-2 text-sm text-slate-600">
+                Memimpin manajemen teknis dan mengoordinasikan jalannya
+                perlombaan robotika kategori LEGO yang diikuti oleh lebih dari
+                25 tim peserta anak-anak/remaja.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center px-4">
+      <p class="text-sm">
+        &copy; 2026 Shela Aga Pedrananda. Berorientasi pada data, presisi untuk
+        dunia industri otomasi.
+      </p>
+    </footer>
+
+    <div
+      id="imageModal"
+      class="fixed inset-0 z-50 hidden flex items-center justify-center modal-bg px-4 opacity-0 transition-opacity duration-300"
+    >
+      <div class="relative max-w-3xl w-full bg-white p-3 rounded-xl shadow-2xl">
+        <button
+          onclick="closeModal()"
+          class="absolute -top-10 right-0 text-white hover:text-red-400 text-3xl font-bold"
+        >
+          &times;
+        </button>
+        <img
+          id="modalImg"
+          src=""
+          alt="Bukti Proyek"
+          class="w-full h-auto rounded-lg"
+        />
+        <p
+          id="modalCaption"
+          class="text-center text-sm font-semibold text-slate-700 mt-2"
+        ></p>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const modalCaption = document.getElementById("modalCaption");
+
+      function openModal(imageSrc, captionText) {
+        modalImg.src = imageSrc;
+        modalCaption.textContent = captionText;
+        modal.classList.remove("hidden");
+        setTimeout(() => {
+          modal.classList.remove("opacity-0");
+        }, 10);
+      }
+
+      function closeModal() {
+        modal.classList.add("opacity-0");
+        setTimeout(() => {
+          modal.classList.add("hidden");
+        }, 300);
+      }
+
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+    </script>
+  </body>
+</html>
